@@ -11,15 +11,16 @@ public class DBUtils {
     private static Statement statement;
     private static ResultSet resultSet;
 
-        //BU METHOD COK KULLANACAGIZ
-        //createConnection database e baglanmak icin. Burda url, username, password u kullanarak database baglaniyoruz
-        //Database e ne zaman baglanmak isterse bu methodu cagrabiliriz
-        //Bu method u data cok BeforeMethod icinde setup icin kullanacagiz
+    //BU METHOD COK KULLANACAGIZ
+    //createConnection database e baglanmak icin. Burda url, username, password u kullanarak database baglaniyoruz
+    //Database e ne zaman baglanmak isterse bu methodu cagrabiliriz
+    //Bu method u data cok BeforeMethod icinde setup icin kullanacagiz
 
     public static void createConnection() {
         String url="jdbc:mysql://45.84.206.41:3306/u480337000_tlb_training";
         String username="u480337000_tbl_training_u";
         String password="pO9#4bmxU";
+
         try {
             connection = DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {
@@ -110,13 +111,15 @@ public class DBUtils {
         return rowCount;
     }
 
-        /**
-         * @return returns a single cell value. If the results in multiple rows and/or
-         *         columns of data, only first column of the first row will be returned.
-         *         The rest of the data will be ignored
-         */
+    /**
+     * @return returns a single cell value. If the results in multiple rows and/or
+     *         columns of data, only first column of the first row will be returned.
+     *         The rest of the data will be ignored
+     */
 
     public static Object getCellValue(String query) {
+
+
         return getQueryResultList(query).get(0).get(0);
     }
     /**
@@ -127,7 +130,7 @@ public class DBUtils {
 
     public static List<Object> getRowList(String query) {
 
-    return getQueryResultList(query).get(0);
+        return getQueryResultList(query).get(0);
     }
     /**
      * @return returns a map which represent a row of data where key is the column
