@@ -239,4 +239,22 @@ public class DBUtils {
         st.close();
     }
 
+    /*
+
+    NOT:
+    * createConnection, URL, kullanıcı adı ve parolayı kullanarak veritabanına bağlantı kurmak için kullanılır.
+    * executeQuery, bir SQL sorgusu yürütmek ve sonuç kümesini bir değişkende depolamak için kullanılır.
+    * closeConnection, veritabanı bağlantısını kapatmak için kullanılır.
+    * getRowCountsonuç kümesindeki satır sayısını döndürürken,
+    * getCellValue, getRowListve getRowMapyöntemleri, sonuç kümesinden çeşitli biçimlerde belirli verileri döndürür.
+    * getQueryResultList, tüm sonuç kümesini, her bir iç listenin bir veri satırını temsil ettiği bir liste listesi olarak almak için kullanılır.
+    * createConnection(): Belirli bir URL, kullanıcı adı ve parola kullanarak veritabanına bir bağlantı oluşturur.
+    * executeQuery(String query): Veritabanında bir SQL sorgusu yürütür ve sonuçları bir nesnede saklar ResultSet.
+    * closeConnection(): Bağlantıyı, bildirimi ve sonuç kümesi nesnelerini kapatır.
+    * getStatement(): SQL sorgularını yürütmek için ifade nesnesini döndürür.
+    * getConnection(): Veritabanına bağlanmak için bağlantı nesnesini döndürür.
+    *getResultset(): Sorgu sonuçlarını almak için sonuç kümesi nesnesini döndürür.
+    * getRowCount(): Sonuçtaki satır sayısını verir
+
+     */
 }

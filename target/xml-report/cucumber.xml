@@ -1,65 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="8.361">
-    <testcase classname="ResultsetMetaData methodlari ile JDBC sorgusu calistirma" name="Staff tablosundan &quot;ID&quot; sorgulama" time="1.829">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.64">
+    <testcase classname="tablo id dogrulama" name="_2" time="1.502">
         <system-out>
-            <![CDATA[* Database baglantisi kurulur...............................................passed
-* Staff tablosundaki "id" leri listelenir...................................passed
-* Verilen "5" dogrulanir....................................................passed
-* Database baglantisi kapatilir.............................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="ResultsetMetaData methodlari ile JDBC sorgusu calistirma" name="Staff tablosundan &quot;ID&quot; sorgulama 2" time="1.059">
-        <system-out>
-            <![CDATA[* Database baglantisi kurulur...............................................passed
-* Staff tablosundaki "id" leri listelenir...................................passed
-* Verilen "2" dogrulanir....................................................passed
-* Database baglantisi kapatilir.............................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="ResultsetMetaData methodlari ile JDBC sorgusu calistirma" name="Staff tablosundan &quot;ID&quot; sorgulama 3" time="1.03">
-        <system-out>
-            <![CDATA[* Database baglantisi kurulur...............................................passed
-* Staff tablosundaki "id" leri listelenir...................................passed
-* Verilen "3" dogrulanir....................................................passed
-* Database baglantisi kapatilir.............................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="ResultsetMetaData methodlari ile JDBC sorgusu calistirma" name="Staff tablosundan &quot;ID&quot; sorgulama 4" time="1.03">
-        <system-out>
-            <![CDATA[* Database baglantisi kurulur...............................................passed
-* Staff tablosundaki "id" leri listelenir...................................passed
-* Verilen "4" dogrulanir....................................................passed
-* Database baglantisi kapatilir.............................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="ResultsetMetaData methodlari ile JDBC sorgusu calistirma" name="Staff tablosundan &quot;ID&quot; sorgulama 5" time="1.02">
-        <system-out>
-            <![CDATA[* Database baglantisi kurulur...............................................passed
-* Staff tablosundaki "id" leri listelenir...................................passed
-* Verilen "1" dogrulanir....................................................passed
-* Database baglantisi kapatilir.............................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="ResultsetMetaData methodlari ile JDBC sorgusu calistirma" name="Staff tablosundan &quot;ID&quot; sorgulama 6" time="1.071">
-        <system-out>
-            <![CDATA[* Database baglantisi kurulur...............................................passed
-* Staff tablosundaki "id" leri listelenir...................................passed
-* Verilen "100" dogrulanir..................................................passed
-* Database baglantisi kapatilir.............................................passed
-]]>
-        </system-out>
-    </testcase>
-    <testcase classname="ResultsetMetaData methodlari ile JDBC sorgusu calistirma" name="Staff tablosundan &quot;ID&quot; sorgulama 7" time="1.049">
-        <system-out>
-            <![CDATA[* Database baglantisi kurulur...............................................passed
-* Staff tablosundaki "id" leri listelenir...................................passed
-* Verilen "10" dogrulanir...................................................passed
-* Database baglantisi kapatilir.............................................passed
+            <![CDATA[Given Database baglantisi kurulur...........................................passed
+Then languages tablosundan verilen "Id" numarasinin native degerinin istenen datayi dondurdugu dogrulanmali..passed
+And Database baglantisi kapatilir...........................................passed
 ]]>
         </system-out>
     </testcase>
